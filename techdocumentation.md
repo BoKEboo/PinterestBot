@@ -116,4 +116,4 @@ PinterestBot распространяется под лицензией MIT. Подробности см. в файле [LICENS
 
 ## Авторы
 
-PPinterestBot разработан [BoKEboo].
+PinterestBot разработан [BoKEboo].
