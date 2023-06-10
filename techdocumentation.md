@@ -112,7 +112,7 @@ PinterestBot разработан для удобного просмотра изображений из учетных записей Pi
 
 ## Лицензия
 
-PinterestBot распространяется под лицензией MIT. Подробности см. в файле [LICENSE](LICENSE).
+PinterestBot распространяется под лицензией MIT. Подробности см. в файле [LICENSE](https://github.com/KiaruGa/PinterestBot/blob/master/LICENSE.txt).
 
 ## Авторы
 
