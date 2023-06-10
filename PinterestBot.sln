@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PinterestBot", "PinterestBot.csproj", "{9043C600-C2CB-457A-BC95-E30E3A9D26F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9043C600-C2CB-457A-BC95-E30E3A9D26F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9043C600-C2CB-457A-BC95-E30E3A9D26F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9043C600-C2CB-457A-BC95-E30E3A9D26F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9043C600-C2CB-457A-BC95-E30E3A9D26F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73E4F0D7-3895-46E2-809F-8ADB5B54CE62}
+	EndGlobalSection
+EndGlobal
