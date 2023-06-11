@@ -39,7 +39,8 @@ namespace PinterestBot
 
                 if (messageText.StartsWith("/start"))
                 {
-                    await botClient.SendTextMessageAsync(chatId, "Добро пожаловать! Пожалуйста, укажите ссылку на свою учетную запись Pinterest.");
+                    await botClient.SendTextMessageAsync(chatId, "Добро пожаловать! Пожалуйста, укажите" +
+                        " ссылку на свою учетную запись Pinterest.");
                 }
                 else if (messageText.StartsWith("http") || messageText.StartsWith("www"))
                 {
@@ -53,12 +54,14 @@ namespace PinterestBot
                     }
                     else
                     {
-                        await botClient.SendTextMessageAsync(chatId, "Недостаточно изображений в указанной учетной записи Pinterest.");
+                        await botClient.SendTextMessageAsync(chatId, "Недостаточно изображений в" +
+                            " указанной учетной записи Pinterest.");
                     }
                 }
                 else
                 {
-                    await botClient.SendTextMessageAsync(chatId, "Неверный ввод. Пожалуйста, укажите корректную ссылку на учетную запись Pinterest.");
+                    await botClient.SendTextMessageAsync(chatId, "Неверный ввод. Пожалуйста, укажите корректную" +
+                        " ссылку на учетную запись Pinterest.");
                 }
             }
         }
@@ -117,7 +120,8 @@ namespace PinterestBot
 
                 });
 
-                await botClient.SendTextMessageAsync(chatId, "Нажмите 'Далее', чтобы увидеть больше изображений или 'Выбрать другой аккаунт', чтобы выбрать другую учетную запись.", replyMarkup: inlineKeyboard);
+                await botClient.SendTextMessageAsync(chatId, "Нажмите 'Далее', чтобы увидеть больше изображений или" +
+                    " 'Выбрать другой аккаунт', чтобы выбрать другую учетную запись.", replyMarkup: inlineKeyboard);
             }
             else if (userAccountCache.ContainsKey(chatId))
             {
@@ -129,7 +133,8 @@ namespace PinterestBot
                     }
                 });
 
-                await botClient.SendTextMessageAsync(chatId, "Больше нет доступных изображений. Нажмите 'Выбрать другой аккаунт', чтобы выбрать другую учетную запись.", replyMarkup: inlineKeyboard);
+                await botClient.SendTextMessageAsync(chatId, "Больше нет доступных изображений. Нажмите " +
+                    "'Выбрать другой аккаунт', чтобы выбрать другую учетную запись.", replyMarkup: inlineKeyboard);
             }
             else
             {
@@ -145,7 +150,8 @@ namespace PinterestBot
             {
                 var web = new HtmlWeb();
                 var document = await web.LoadFromWebAsync(pinterestLink);
-                var imageNodes = document.DocumentNode.SelectNodes($"//div[contains(@class, 'XiG') and contains(@class, 'zI7') and contains(@class, 'iyn') and contains(@class, 'Hsu')]//img");
+                var imageNodes = document.DocumentNode.SelectNodes($"//div[contains(@class, 'XiG') " +
+                    $"and contains(@class, 'zI7') and contains(@class, 'iyn') and contains(@class, 'Hsu')]//img");
 
                 if (imageNodes != null)
                 {
